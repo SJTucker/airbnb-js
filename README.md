@@ -1,21 +1,7 @@
 Airbnb - Node.js Version
 ========================================
 
-- Node.js
-- Express
-- MongoDB
-- Redis
-- Moment
-- Bcrypt
-- Lo-Dash
-- Less
-- Jade
-- Request
-- Grunt
-- Mocha
-- Chai
-- SuperTest
-- Blanket
-- TravisCI
-- Coveralls
+Medals of Honor
+--------------
 
+[![Build Status](https://travis-ci.org/rtmalone/airbnb-js.png?branch=master)](https://travis-ci.org/rtmalone/airbnb-js)
