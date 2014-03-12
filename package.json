@@ -11,7 +11,8 @@
     "start"     : "node app/app.js",
     "test"      : "mocha --recursive test",
     "testwatch" : "mocha -w --recursive test",
-    "coveralls" : "./node_modules/mocha/bin/mocha test --recursive -r blanket -R mocha-lcov-reporter | coveralls"
+    "coveralls" : "./node_modules/mocha/bin/mocha test --recursive -r blanket -R mocha-lcov-reporter | coveralls",
+    "mongod" : "mongod --config ~/download/config-files/mongodb.conf"
   },
   "dependencies": {
     "express":         "*",
