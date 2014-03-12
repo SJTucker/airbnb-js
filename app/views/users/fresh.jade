@@ -1,0 +1,22 @@
+extends ../shared/template
+
+block content
+  h1 Please join us at AirBnB!
+
+  .row
+    .small-6.columns
+      form(method='post', action='/register')
+        fieldset
+          legend= title
+          label Email
+          input(type='email', name='email', autofocus='true')
+          label Password
+          input(type='password', name='password')
+          label Role
+          select(name='role')
+            option Guest
+            option Host
+          button.tiny.radius Create
+    .small-6.columns
+
+
