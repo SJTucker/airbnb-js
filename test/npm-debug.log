@@ -2,7 +2,7 @@
 1 verbose cli [ '/usr/local/node/bin/node',
 1 verbose cli   '/usr/local/node/bin/npm',
 1 verbose cli   'run',
-1 verbose cli   'test' ]
+1 verbose cli   'mongod' ]
 2 info using npm@1.3.24
 3 info using node@v0.10.25
 4 error Error: ENOENT, open '/data/code/MYairbnb-js/test/package.json'
@@ -10,7 +10,7 @@
 5 error including the npm and node versions, at:
 5 error     <http://github.com/isaacs/npm/issues>
 6 error System Linux 3.11.0-12-generic
-7 error command "/usr/local/node/bin/node" "/usr/local/node/bin/npm" "run" "test"
+7 error command "/usr/local/node/bin/node" "/usr/local/node/bin/npm" "run" "mongod"
 8 error cwd /data/code/MYairbnb-js/test
 9 error node -v v0.10.25
 10 error npm -v 1.3.24

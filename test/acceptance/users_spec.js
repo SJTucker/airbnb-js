@@ -67,5 +67,54 @@ describe('users', function(){
     });
   });
 
+  describe('GET /login', function(){
+    it('should bring the user to the login page', function(done){
+      request(app)
+      .get('/login')
+      .end(function(err, res){
+        expect(res.status).to.equal(200);
+        expect(res.text).to.include('Login');
+        done();
+      });
+    });
+
+    it('should login a user', function(done){
+      request(app)
+      .post('/login')
+      .field('email', 'sue@gmail.com')
+      .field('password', '1234')
+      .end(function(err, res){
+        expect(res.status).to.equal(302);
+        expect(res.text).to.not.include('Login');
+        done();
+      });
+    });
+
+    it('should not login a user', function(done){
+      request(app)
+      .post('/login')
+      .field('email', 'bad@gmail.com')
+      .field('password', '1234')
+      .end(function(err, res){
+        expect(res.status).to.equal(200);
+        expect(res.text).to.include('Login');
+        done();
+      });
+    });
+
+    it('should not login a user', function(done){
+      request(app)
+      .post('/login')
+      .field('email', 'sue@gmail.com')
+      .field('password', 'bad')
+      .end(function(err, res){
+        expect(res.status).to.equal(200);
+        expect(res.text).to.include('Login');
+        done();
+      });
+    });
+  });
+
+
 
 });

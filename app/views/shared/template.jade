@@ -4,7 +4,7 @@ html(class='no-js', lang='en')
   head
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    title= title
+    title= AirBnB
     link(rel='stylesheet', href='/css/normalize.css')
     link(rel='stylesheet', href='/css/foundation.css')
     link(rel='stylesheet', href='/less/app.css')
@@ -22,6 +22,10 @@ html(class='no-js', lang='en')
         ul.right
           li: a(href="/") Home
           li.divider
+          li: a(href="/listings/new") New Listing
+          li.divider
+          li: a(href="/listings") Listings
+          li.divider
           li: a(href="/register") Register
           li.divider
           li: a(href="/") Login
@@ -33,5 +37,6 @@ html(class='no-js', lang='en')
     script(src='/js/vendor/foundation.min.js')
     script(src='/js/vendor/lodash.js')
     script(src='/js/vendor/moment.js')
+    script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBZ7f53mzZHfIF5Guqu3TrbhPNuaxsu6Fc&sensor=true')
     script(src='/js/source/main.js')
-
+    block scripts
